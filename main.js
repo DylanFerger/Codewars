@@ -19,4 +19,28 @@ function differenceInAges(ages){
 
 let Ghost = function() {
     this.color = ['white', 'yellow', 'purple', 'red'][Math.floor(Math.random() * 4)];
-  };
+};
+
+
+// Day 3
+// Given a string of arbitrary length with any ascii characters. Write a function to determine whether the string contains the whole word "English".
+
+// The order of characters is important -- a string "abcEnglishdef" is correct but "abcnEglishsef" is not correct.
+
+// Upper or lower case letter does not matter -- "eNglisH" is also correct.
+
+// Return value as boolean values, true for the string to contains "English", false for it does not.
+
+function spEng(sentence){
+  
+  let lowerCase = sentence.toLowerCase();
+  
+  if (lowerCase.includes('english')){
+    return true
+  }else{
+    return false
+  }
+}
+
+
+// Day 4
