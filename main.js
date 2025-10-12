@@ -89,4 +89,10 @@ function position(letter){
 }
 
 
+function position(letter){
+  const abc = 'abcdefghijklmnopqrstuvwxyz'
+  return 'Position of alphabet: ' + (abc.indexOf(letter) + 1)
+}
+
 // Day 7
+
