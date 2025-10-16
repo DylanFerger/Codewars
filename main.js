@@ -159,4 +159,26 @@ function solution (roman) {
 
 // Day 9
 
+// Pirates have notorious difficulty with enunciating. They tend to blur all the letters together and scream at people.
+
+// At long last, we need a way to unscramble what these pirates are saying.
+
+// Write a function that will accept a jumble of letters as well as a dictionary, and output a list of words that the pirate might have meant.
+
+function grabscrab(anagram, dictionary) {
+  let arr = [];
+  let sortedAnagram = anagram.toLowerCase().split('').sort().join('');
+
+  for (let word of dictionary) {
+    let sortedWord = word.toLowerCase().split('').sort().join('');
+    if (sortedWord === sortedAnagram) {
+      arr.push(word);
+    }
+  }
+  return arr;
+}
+
+
+// Day 10
+
 
