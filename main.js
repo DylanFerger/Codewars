@@ -181,4 +181,35 @@ function grabscrab(anagram, dictionary) {
 
 // Day 10
 
+// Write a class Block that creates a block (Duh..)
 
+// Requirements
+// The constructor should take an array as an argument, this will contain 3 integers of the form [width, length, height] from which the Block should be created.
+
+class Block{
+
+  constructor(arr){
+    this.width = arr[0];
+    this.length = arr[1];
+    this.height = arr[2];
+  }
+  
+   getWidth() {
+    return this.width
+  }
+  getLength() {
+    return this.length
+  }
+  getHeight() {
+    return this.height
+  }
+  getVolume() {
+    return this.length * this.width * this.height
+  }
+  getSurfaceArea() {
+    return 2 * (this.width * this.length + this.width * this.height + this.length * this.height)
+  }
+}
+
+
+// Day 11
